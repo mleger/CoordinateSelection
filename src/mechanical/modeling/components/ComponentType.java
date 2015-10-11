@@ -8,18 +8,18 @@ package mechanical.modeling.components;
  * @since Mar 23, 2014
  */
 public enum ComponentType {
-    REVOLUTE_JOINT			(new String[]{}, new String[]{"phi"}),
-    UNIVERSAL_JOINT			(new String[]{}, new String[]{"phi", "theta"}),
-    SPHERICAL_JOINT			(new String[]{}, new String[]{"phi", "theta", "psi"}),
-    PRISMATIC_JOINT			(new String[]{"x"} , new String[]{}),
-    PLANAR_JOINT			(new String[]{"x", "y"}, new String[]{}),
-    XYZ_TRANSLATIONAL_JOINT	(new String[]{"x", "y", "z"} ,new String[]{}),
+    REVOLUTE_JOINT          (new String[]{}, new String[]{"phi"}),
+    UNIVERSAL_JOINT         (new String[]{}, new String[]{"phi", "theta"}),
+    SPHERICAL_JOINT         (new String[]{}, new String[]{"phi", "theta", "psi"}),
+    PRISMATIC_JOINT         (new String[]{"x"} , new String[]{}),
+    PLANAR_JOINT            (new String[]{"x", "y"}, new String[]{}),
+    XYZ_TRANSLATIONAL_JOINT (new String[]{"x", "y", "z"} ,new String[]{}),
     REVOLUTE_PRISMATIC_JOINT(new String[]{"x"}, new String[]{"phi"}),
-    RIGID_BODY				(new String[]{"x", "y", "z"}, new String[]{"phi", "theta", "psi"}),
-    ARM						(new String[]{}, new String[]{}),
-    FORCE_DRIVER			(new String[]{"x", "y", "z"}, new String[]{"phi", "theta", "psi"}),
-    MOMENT_DRIVER			(new String[]{"x", "y", "z"}, new String[]{"phi", "theta", "psi"}),
-    MOTION_DRIVER			(new String[]{}, new String[]{});
+    RIGID_BODY              (new String[]{"x", "y", "z"}, new String[]{"phi", "theta", "psi"}),
+    ARM                     (new String[]{}, new String[]{}),
+    FORCE_DRIVER            (new String[]{"x", "y", "z"}, new String[]{"phi", "theta", "psi"}),
+    MOMENT_DRIVER           (new String[]{"x", "y", "z"}, new String[]{"phi", "theta", "psi"}),
+    MOTION_DRIVER           (new String[]{}, new String[]{});
 
     private String[] transationalVariables;
     private String[] rotationalVariables;
