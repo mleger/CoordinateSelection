@@ -11,8 +11,8 @@ import mechanical.modeling.components.ReferenceFrame;
 /**
  * This class contains the main class, which runs a series of Demos
  * that demonstrate how to use the code base.
- * 
- * @author Mathieu LŽger
+ *
+ * @author Mathieu Lï¿½ger
  * @since Mar 23, 2014
  */
 public final class Demo {
@@ -21,18 +21,18 @@ public final class Demo {
         String newLine = System.getProperty("line.separator");
 
         /*
-         * This project is an example of how the GraphTheoryAlgorthms
-         * project can be used by other projects that require graph theoretical
-         * algorithms to analyze the topology of certain systems.
-         * 
-         * Unlike the GraphTheoryAlgorthms project, this project is a
-         * simple implementation that has only limited extensibility in mind.
-         * 
+         * This project is an example of how the Graph library can be used
+         * by other projects that require graph theoretical algorithms to
+         * analyze the topology of certain systems.
+         *
+         * Unlike the Graph library, this project is a simple implementation
+         * that has only limited extensibility in mind.
+         *
          * Mechanical systems are defined here as a series of mechanical
          * components (such as joints, rigid bodies, force/torque drivers, etc.) which
          * are connected to body-fixed reference frames. Each component defines the
          * type of motion that is allowed between the two reference frames to which it connects.
-         * 
+         *
          * An example mechanical system (illustrated in the SpatialSerialManipulator.pdf
          * file found in the resources folder of this project) is defined below.
          */
@@ -93,7 +93,7 @@ public final class Demo {
          * the rotational motions of the system. Having two graphs enables
          * the optimal variable selection algorithm to select the modeling variables from
          * different mechanical components in each domain (translational and rotational).
-         * 
+         *
          * The current implementation of the optimal modeling variable algorithm
          * assigns the number of variables associated to the given component
          * in the given domain as the weight of that components edge (for example,
@@ -102,7 +102,7 @@ public final class Demo {
          * the GraphTheoryAlgorithms project is then used to find a tree that
          * results in the fewest amount of variables relating each reference frame
          * to the ground node in each domain.
-         * 
+         *
          * Once the trees are found, the modeling variable names of each edge in both
          * the rotational and translational trees are found and returned as a set of
          * strings.
@@ -114,7 +114,7 @@ public final class Demo {
 
         /*
          * Future Improvements:
-         * 
+         *
          * The current project focuses on finding a mechanical system's optimal
          * modeling coordinates. However, this is only the first step in the derivation
          * of a mechanical system's modeling equations. In the future, the mechanical

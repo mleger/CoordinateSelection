@@ -1,12 +1,11 @@
 package mechanical.modeling.algorithms;
 
-import graph.algorithms.ShortestPathsToNode;
-import graph.elements.WeightedGraph;
-
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+import graph.algorithms.ShortestPathsToNode;
+import graph.elements.WeightedGraph;
 import mechanical.modeling.components.MechanicalEdge;
 import mechanical.modeling.components.MechanicalSystem;
 import mechanical.modeling.components.ReferenceFrame;
@@ -15,7 +14,7 @@ import mechanical.modeling.components.ReferenceFrame;
  * This class can be used to find a set of modeling variables used
  * to generate the mechanical system's equations in a format that
  * will result in fast simulation times.
- * 
+ *
  * <p>
  * The current implementation assigns the number of modeling variables
  * associated with the component in the given domain as the weight of
@@ -25,14 +24,14 @@ import mechanical.modeling.components.ReferenceFrame;
  * variable relating each of the system's reference frames to the
  * ground.
  * </p>
- * 
+ *
  * <p>
- * Note: This algorithm is in a state of flux. Currently, a simple and
- * effective algorithm has been temporarily implemented. Major
- * improvements will be made to this algorithm in the near future.
+ * Note: This algorithm is in a state of flux and should be improved in
+ * the future. Currently, a simple but effective version of the
+ * algorithm has been implemented.
  * </p>
  *
- * @author Mathieu LŽger
+ * @author Mathieu Lï¿½ger
  * @since Mar 23, 2014
  */
 public final class OptimalModelingVariables {
@@ -48,7 +47,7 @@ public final class OptimalModelingVariables {
      * Finds a set of modeling variables that can be used to generate the
      * mechanical system's equations in a format that will result in fast
      * simulation times.
-     * 
+     *
      * @param mechanicalSystem is the mechanical system who's optimal
      *        modeling variables need to be found
      * @return a set of Strings defining the optimal modeling variables
